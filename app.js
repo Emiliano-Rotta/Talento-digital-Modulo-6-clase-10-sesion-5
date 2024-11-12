@@ -13,10 +13,19 @@ app.set('view engine', 'handlebars'); //
 
 app.get('/', (req, res)=>{
     const datos = {
-        nombre: "Sebastian",
+        nombre: "Ecomerce",
         fecha: new Date().toLocaleDateString()
     }
     res.render('home', datos)
+
+})
+app.get('/producto', (req, res)=>{
+    const producto = {
+        nombre: "Computadora",
+        descripcion: "Buen producto",
+        precio: 1500
+    }
+    res.render('producto', producto)
 
 })
 
