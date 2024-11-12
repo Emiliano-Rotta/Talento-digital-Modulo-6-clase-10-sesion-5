@@ -1,8 +1,31 @@
 <h1>Catalogo de Productos</h1>
 
-{{#each productoCatalogo }}
+{{#each productoCatalogo }} 
 <h5>{{this.nombre}}</h5>
 <h5>{{this.descripcion}}</h5>
 <h5>{{this.precio}}</h5>
 
+{{else}}<p> no hay productos en el catalogo </p>
+
 {{/each}}
+
+{{!-- each con else --}}
+{{!-- <h1>Catalogo de Productos</h1>
+
+{{#each productoCatalogo }} 
+<h5>{{this.nombre}}</h5>
+<h5>{{this.descripcion}}</h5>
+<h5>{{this.precio}}</h5>
+
+{{else}}<p> no hay productos en el catalogo </p>
+
+{{/each}} --}}
+
+
+
+{{!-- if y else --}}
+{{!-- supongamos que hay un login --}}
+{{!-- 
+{{#if userLogin}}
+<h1>Bienvenido, {{userName}}</h1>
+{{else}} <h4>inicia sesión</h4> --}}
